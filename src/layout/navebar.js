@@ -5,6 +5,10 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 // import MenuIcon from '@mui/icons-material/Menu';
+// import Menu from '@mui/material/Menu';
+// import MenuItem from '@mui/material/MenuItem';
+// import { MenuIcon } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
   
@@ -12,17 +16,18 @@ import Typography from '@mui/material/Typography';
 const Navebar = () => {
     return(
         <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx ={{background:"#063970"}}>
         <Toolbar>
-          <IconButton
+        <IconButton
             size="large"
             edge="start"
             color="inherit"
-            aria-label="open drawer"
+            aria-label="menu"
             sx={{ mr: 2 }}
           >
-            {/* <MenuIcon /> */}
+            <MenuIcon/>
           </IconButton>
+     
           <Typography
             variant="h6"
             noWrap
