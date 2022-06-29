@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -16,6 +16,8 @@ import { Tabs, Tab, Button } from '@mui/material';
   
 
 const Navebar = () => {
+
+    const [value, setvalue] = useState();
     return(
         <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx ={{background:"#063970"}}>
@@ -33,14 +35,16 @@ const Navebar = () => {
           </Typography>
           </IconButton> 
             
-          <Tabs textColor="inherit">
+          <Tabs textColor="inherit" value={value} onChange={(e,value)=> setvalue(value)} indicatorColor="secondary">
             <Tab label="Home"/>
             <Tab label="About"/>
             <Tab label="Contact"/>
+            <Tab label="Consult"/>
+
           </Tabs>
 
-          <Button sx={{marginLeft:"auto"}} variant="contained">Login</Button>
-          <Button variant="contained">Sign Up</Button>
+          <Button sx={{marginLeft:"auto"}} variant="contained">Login{" "}</Button>
+          <Button sx={{marginLeft: "10px"}}variant="contained">Sign Up{" "}</Button>
         </Toolbar>
       </AppBar>
     </Box>
