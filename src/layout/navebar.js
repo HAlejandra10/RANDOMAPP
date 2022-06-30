@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-// import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { Tabs, Tab, Button,useMediaQuery, useTheme, Link} from '@mui/material';
 import DrawerComponent from './drawerComponent';
@@ -27,6 +26,7 @@ const Navebar = () => {
         <Link to="">
          <img src={image}  alt='logo' width={50} />
         </Link>
+        
                  { 
                     isMatch ? (
                         <>
@@ -55,12 +55,7 @@ const Navebar = () => {
                        
                     )
                 }
-                   
-                 
-            
-        
         </Toolbar>
-        
       </AppBar>
     </Box>
 )}

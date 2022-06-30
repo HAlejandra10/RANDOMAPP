@@ -1,10 +1,14 @@
 import React from 'react';
 import Navebar from './layout/navebar';
+import Home from './pages/home';
+
+
 
 const App = () => {
   return (
     <div>
-    <Navebar/>
+    <Navebar/>   
+    <Home/>
     </div>
   );
 }
