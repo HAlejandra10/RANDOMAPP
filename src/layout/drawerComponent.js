@@ -2,7 +2,11 @@ import { Drawer, IconButton, List, ListItemButton, ListItemText} from '@mui/mate
 import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 
+
+const PAGES= ["Home", "About", "Contact", "Consult", "Login", "LogOut" ]
+
 const DrawerComponent = () => {
+ 
   const [openDrawer, setopenDrawer] = useState(false);
 
   return (
@@ -11,16 +15,21 @@ const DrawerComponent = () => {
       onClose= {() => setopenDrawer(false)}
       >
            <List>
-              <ListItemButton>
-                  <ListItemButton>
-                    <ListItemText>
-                      Login
-                    </ListItemText>
-                  </ListItemButton>
-              </ListItemButton>
+            {
+              PAGES.map((page, index) =>(
+                <ListItemButton onClick={() => setopenDrawer(false)} key={index}>
+                <ListItemButton>
+                  <ListItemText>
+                    {page}
+                  </ListItemText>
+                </ListItemButton>
+            </ListItemButton>
+              ))
+            }
+       
            </List>
       </Drawer>
-      <IconButton onClick={()=> setopenDrawer(!openDrawer)}>
+      <IconButton  sx= {{color:"white" , marginLeft:"auto"}} onClick={()=> setopenDrawer(!openDrawer)}>
       <MenuIcon sx={{marginRight:"10px"}}/>
       </IconButton>
     </React.Fragment>
