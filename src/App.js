@@ -1,20 +1,24 @@
 import React from 'react';
-import DrawerComponent from './layout/drawerComponent';
-import Navebar from './layout/navebar';
+import styled from "styled-components";
+import Dashboard from './Componentes/dashboard';
 import SideBar from './layout/sideBar';
-import Home from './pages/home';
+
 
 
 
 const App = () => {
   return (
-    <div>
-    {/* <Navebar /> */}
-    {/* <DrawerComponent/>
-    <Home/> */}
+    <Div>
     <SideBar/>
-    </div>
+    <Dashboard/>
+
+   
+    </Div>
   );
 }
 
 export default App;
+
+const Div= styled.div`
+position: relative;
+`
