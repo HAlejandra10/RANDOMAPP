@@ -1,16 +1,19 @@
 import React from 'react'
 import { Routes, Route} from "react-router-dom";
-import Home from './pages/home'
-import About from './pages/home'
-import Contact from './pages/home'
+import Consult from '../pages/consult';
+import ContactUs from '../pages/contact';
+import Home from '../pages/home';
+
+
 
 const Linkspages = () => {
   return (
     <div>
+
          <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} /> 
-        <Route path="contact" element={<Contact />} /> 
+         <Route path="contactUs" element={<ContactUs/> } />
+        <Route path="consult" element={<Consult/> }/>
       </Routes>
     </div>
   )
