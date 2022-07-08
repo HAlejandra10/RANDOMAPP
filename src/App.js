@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import Dashboard from './Componentes/dashboard';
-import SideBar from './layout/sideBar';
+// import Dashboard from './Componentes/dashboard';
+import Login from './layout/login';
+// import SideBar from './layout/sideBar';
 
 
 
@@ -9,8 +10,9 @@ import SideBar from './layout/sideBar';
 const App = () => {
   return (
     <Div>
-    <SideBar/>
-    <Dashboard/>
+      <Login/>
+    {/* <SideBar/>
+    <Dashboard/> */}
 
    
     </Div>
