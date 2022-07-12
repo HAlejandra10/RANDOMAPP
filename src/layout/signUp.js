@@ -6,16 +6,7 @@ const  SignUp = () => {
   return (
   <Section>
 
-{/* <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-  <li className="nav-item" role="presentation">
-    <a className="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
-  </li>
-  <li className="nav-item" role="presentation">
-    <a className="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
-  </li>
-</ul> */}
-
-<div className="container h-100">
+<div className="container">
         <div className="d-flex justify-content-center h-100">
           <div className="user_card">
             <div className="d-flex justify-content-center">
@@ -30,8 +21,7 @@ const  SignUp = () => {
               </div>
             </div>
             <div className="d-flex justify-content-center form_container">
-           
-              <form className='class="mx-1 mx-md-4'>
+              <form className='register_form'>
               <p className="title_signup text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
               <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -65,16 +55,16 @@ const  SignUp = () => {
                     </div>
                   </div>
 
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                    <label class="form-check-label" for="form2Example3">
-                      I agree all statements in <a href="#!">Terms of service</a>
-                    </label>
-                  </div>
-
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Register</button>
-                  </div>
+                  <div class="form-check d-flex justify-content-left mb-4">
+                     <input className="form-check-input" type="checkbox" value="" id="registerCheck" 
+                      aria-describedby="registerCheckHelpText" />
+                       <label class="form-check-label" for="registerCheck">
+                          I have read and agree to the terms
+                      </label>
+                 </div>
+                 <div className="d-flex justify-content-center mt-3 login_container">
+                  <button type="button" name="button" className="btn login_btn">Sign In</button>
+                </div>
               </form>
             </div>
           </div>
@@ -88,7 +78,7 @@ export default SignUp
 
 const Section = styled.section`
 .user_card {
-    height: 600px;
+    height: 750px;
     align-self: center;
     width: 1000px;
     margin-top: 100px;
@@ -101,6 +91,16 @@ const Section = styled.section`
     padding: 10px;
     border-radius: 5px;
 
+}
+register_form{
+    position: relative;
+    left: -250px;
+    right: -70px;
+    bottom: -200px
+    top: -200px;
+}
+.login_container {
+    padding: 0 2rem;
 }
 .title_signup {
     position:relative;
@@ -118,7 +118,8 @@ const Section = styled.section`
 .form_container {
     display: grid;
     place-content: center;
-    margin-top: 50px;
+    margin-top: -300px;
+    padding: 10px;
 }
 .login_btn {
     width: 100%;
@@ -168,6 +169,7 @@ const Section = styled.section`
             left: -250px;
            right: -70px;
            bottom: -200px
+           top: -200px;
          }
          span {
              height: 100px;
@@ -175,6 +177,7 @@ const Section = styled.section`
              left: -400px;
              bottom: -300px;
              font-size: 2rem;
+             top: 70px;
              text-align: left;
              justify-content: center;
             font-family: "Permanent Marker", cursive;
