@@ -1,14 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {FaTaxi} from 'react-icons/fa'
-// import form from 'react-bootstrap/Form';
-// import IconButton from '@mui/material/IconButton';
-// import OutlinedInput from '@mui/material/OutlinedInput';
-// import InputLabel from '@mui/material/InputLabel';
-// import InputAdornment from '@mui/material/InputAdornment';
-// import FormControl from '@mui/material/FormControl';
-// import Visibility from '@mui/icons-material/Visibility';
-// import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Login = () => {
   return (
@@ -25,7 +18,6 @@ const Login = () => {
               <div className="logo_word"> 
                 <span>MY TAXI</span>
                 </div>
-             
               </div>
               </div>
             </div>
@@ -56,7 +48,7 @@ const Login = () => {
             </div>
             <div className="mt-4">
               <div className="d-flex justify-content-center links">
-                Don't have an account? <a href="#" className="ml-2">Sign Up</a>
+                Don't have an account? <a href="#" className="ml-2">Register</a>
               </div>
               <div className="d-flex justify-content-center links">
                 <a href="#">Forgot your password?</a>

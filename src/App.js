@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 // import Dashboard from './Componentes/dashboard';
 import Login from './layout/login';
+import SignUp from './layout/signUp';
 // import SideBar from './layout/sideBar';
 
 
@@ -10,10 +11,10 @@ import Login from './layout/login';
 const App = () => {
   return (
     <Div>
-      <Login/>
+      {/* <Login/> */}
     {/* <SideBar/>
     <Dashboard/> */}
-
+<SignUp/>
    
     </Div>
   );
