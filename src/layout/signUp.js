@@ -23,11 +23,11 @@ const  SignUp = () => {
             <div className="d-flex justify-content-center form_container">
               <form className='register_form'>
               <p className="title_signup text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-              <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Your Name</label>
+              <div className="d-flex flex-row align-items-center mb-4">
+                    <i className="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div className="form-outline flex-fill mb-0">
+                      <input type="text" id="form3Example1c" className="form-control" />
+                      <label className="form-label">Your Name</label>
                     </div>
                   </div>
 
@@ -35,30 +35,30 @@ const  SignUp = () => {
                     <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div className="form-outline flex-fill mb-0">
                       <input type="email" id="form3Example3c" className="form-control" />
-                      <label className="form-label" for="form3Example3c">Your Email</label>
+                      <label className="form-label" >Your Email</label>
                     </div>
                   </div>
 
                   <div className="d-flex flex-row align-items-center mb-4">
                     <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div className="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" />
-                      <label className="form-label" for="form3Example4c">Password</label>
+                      <input type="password" id="form3Example4c" className="form-control" />
+                      <label className="form-label" >Password</label>
                     </div>
                   </div>
 
                   <div className="d-flex flex-row align-items-center mb-4">
                     <i className="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div className="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4cd" class="form-control" />
-                      <label className="form-label" for="form3Example4cd">Repeat your password</label>
+                      <input type="password" id="form3Example4cd" className="form-control" />
+                      <label className="form-label">Repeat your password</label>
                     </div>
                   </div>
 
-                  <div class="form-check d-flex justify-content-left mb-4">
+                  <div className="form-check d-flex justify-content-left mb-4">
                      <input className="form-check-input" type="checkbox" value="" id="registerCheck" 
                       aria-describedby="registerCheckHelpText" />
-                       <label class="form-check-label" for="registerCheck">
+                       <label className="form-check-label">
                           I have read and agree to the terms
                       </label>
                  </div>
@@ -79,8 +79,8 @@ export default SignUp
 const Section = styled.section`
 .user_card {
     height: 750px;
-    align-self: center;
     width: 1000px;
+    align-self: center;
     margin-top: 100px;
     margin-bottom: 200px;
     background: #efb810;
@@ -94,8 +94,9 @@ const Section = styled.section`
 }
 register_form{
     position: relative;
+    align-items: center;
     left: -250px;
-    right: -70px;
+    right: -100px;
     bottom: -200px
     top: -200px;
 }
@@ -105,8 +106,9 @@ register_form{
 .title_signup {
     position:relative;
     right: -70px;
-    bottom: -200px
+    bottom: 300px
     top: -250px;
+    left: -200px;
 
 }
 // .brand_logo {

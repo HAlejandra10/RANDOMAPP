@@ -2,8 +2,24 @@ import React from 'react'
 import styled from 'styled-components';
 import {FaTaxi} from 'react-icons/fa'
 import { useAuth0 } from '@auth0/auth0-react'
+// import db from './../db.js'
+// import { doc, getDoc } from "firebase/firestore";
+
+
 
 const Login = () => {
+
+  // const docRef = doc(db, "productos", "K2bmjYCiVrJBqDjjIS3i");
+// eslint-disable-next-line
+  // const docSnap = await getDoc(docRef);
+
+  //   if (docSnap.exists()) {
+  //     console.log("Document data:", docSnap.data());
+  //   } else {
+  //     // doc.data() will be undefined in this case
+  //     console.log("No such document!");
+  //   }
+
   return (
 
 <Section>
@@ -79,6 +95,7 @@ const Section = styled.section`
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;
+    left: 300px;
 
 }
 // .brand_logo {

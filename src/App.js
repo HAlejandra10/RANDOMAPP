@@ -11,11 +11,11 @@ import SignUp from './layout/signUp';
 const App = () => {
   return (
     <Div>
-      {/* <Login/> */}
+      {/* <Login/>   */}
     {/* <SideBar/>
     <Dashboard/> */}
 <SignUp/>
-   
+    
     </Div>
   );
 }
@@ -23,5 +23,7 @@ const App = () => {
 export default App;
 
 const Div= styled.div`
+
 position: relative;
+
 `
